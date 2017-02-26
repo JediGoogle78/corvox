@@ -1,31 +1,28 @@
 {
-  "name": "corvox",
-  "version": "0.0.1",
-  "description": "Front end part of the corvox project",
-  "main": "main.js",
+  "name": "wp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "preinstall": "chmod u+x npm_scripts/preinstall.sh && npm_scripts/preinstall.sh"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shonie/corvox.git"
-  },
-  "keywords": [
-    "ATS",
-    "FreeSwitch"
-  ],
-  "author": "shonie",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shonie/corvox/issues"
-  },
-  "homepage": "https://github.com/shonie/corvox#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-browserify": "^0.5.1"
-  },
   "dependencies": {
-    "colors": "^1.1.2"
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-runtime": "^6.22.0",
+    "node-static": "^0.7.9",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "webpack": "^2.2.1"
   }
 }
