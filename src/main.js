@@ -25,12 +25,12 @@ const appContainer = document.getElementById('app');
 ReactDOM.render(
     <Clock />,
     appContainer
-)
+);
 
 /*
     and just poetry...
 
  If you imagine a component tree as a waterfall of props, each component's state
  is like an additional water source that joins it at an arbitrary point but also flows down.
- 
+
  */

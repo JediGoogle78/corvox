@@ -11,7 +11,21 @@ export default class Clock extends React.Component {
     render() {
         return (
             <div>
-                <h1>Hello, world!</h1>
+                <h1 onClick={(e) => {
+                    console.log('React click event is ', e);
+                    e.persist();
+                    const event = e;
+
+                    setTimeout(() => {
+                        /*
+                            in asynchronous code event's properties will be nullified!
+                            instead if you use e.persist(); to save and not nullify the event
+                          */
+                        console.log('after one second React event is ', e);
+                        console.log('but saved in constant field ', event);
+                    }, 1000)
+
+                }}>Hello, world!</h1>
                 <FormattedDate date={this.state.date} />
             </div>
         );
