@@ -1,2 +1,8 @@
+# Storm's project
 .idea
+
+# Deps
 node_modules
+
+# Webpack generated directories
+localhost:8080
